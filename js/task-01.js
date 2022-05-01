@@ -11,7 +11,7 @@ for (const item of list.children) {
     console.log(`Category: `, category);
 
     const categoryElements = item.querySelector('ul');
-    console.log(`Elements:`, categoryElements.length);
+    console.log(`Elements:`, categoryElements.children.length);
 }
     
     
