@@ -4,12 +4,10 @@ const decrement = document.querySelector('[data-action="decrement"]');
 
 let counterValue = 0;
 
-increment.addEventListener('click', () => {
-    counterValue += 1;
-    counter.textContent = counterValue;
-});
+increment.addEventListener('click', () => changeCounterValue(1));
 
-decrement.addEventListener('click', () => {
-    counterValue -= 1;
-    counter.textContent = counterValue;
-});
+decrement.addEventListener('click', () => changeCounterValue(-1));
+
+function changeCounterValue(number) {
+    counter.textContent = counterValue += number;
+}
